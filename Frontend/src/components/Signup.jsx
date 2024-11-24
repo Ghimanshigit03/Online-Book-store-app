@@ -25,7 +25,7 @@ function Signup() {
       .then((res) => {
         console.log(res.data);
         if (res.data) {
-          toast.success("Signup Successfully");
+          toast.success("Signed Up");
           navigate(from, { replace: true });
         }
         localStorage.setItem("Users", JSON.stringify(res.data.user));
@@ -51,7 +51,7 @@ function Signup() {
                 ✕
               </Link>
 
-              <h3 className="font-bold text-lg">Signup</h3>
+              <h3 className="font-bold text-lg">Sign Up</h3>
               <div className="mt-4 space-y-2">
                 <span>Name</span>
                 <br />
@@ -105,10 +105,10 @@ function Signup() {
               {/* Button */}
               <div className="flex justify-around mt-4">
                 <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200">
-                  Signup
+                  Sign Up
                 </button>
                 <p className="text-xl">
-                  Have account?{" "}
+                  Already have an account?{" "}
                   <button
                     className="underline text-blue-500 cursor-pointer"
                     onClick={() =>

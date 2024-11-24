@@ -20,7 +20,7 @@ function Login() {
       .then((res) => {
         console.log(res.data);
         if (res.data) {
-          toast.success("Loggedin Successfully");
+          toast.success("Logged In Successfully");
           document.getElementById("my_modal_3").close();
           setTimeout(() => {
             window.location.reload();
@@ -97,7 +97,7 @@ function Login() {
                   to="/signup"
                   className="underline text-blue-500 cursor-pointer"
                 >
-                  Signup
+                  Sign Up
                 </Link>{" "}
               </p>
             </div>
