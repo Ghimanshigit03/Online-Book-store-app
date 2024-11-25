@@ -2,6 +2,8 @@ import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 
+import Footer from "../components/Footer";
+
 function OrderPage() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -14,7 +16,7 @@ function OrderPage() {
       fullName: e.target[0].value,
       address: e.target[1].value,
       contactNumber: e.target[2].value,
-      item, 
+      item,
     };
 
     try {
@@ -77,6 +79,10 @@ function OrderPage() {
           </button>
         </form>
       </div>
+      <div className="my-4">
+        <hr className="border-t border-gray-300 dark:border-gray-600" />
+      </div>
+      <Footer />
     </div>
   );
 }
